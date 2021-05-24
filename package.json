@@ -22,6 +22,7 @@
     "gatsby-plugin-emotion": "^6.5.0",
     "gatsby-plugin-mdx": "^2.5.1",
     "gatsby-plugin-react-helmet": "^4.5.0",
+    "gatsby-source-filesystem": "^3.5.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0"
