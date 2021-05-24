@@ -1,10 +1,10 @@
 import React from 'react';
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/react';
 
-//
 const Layout = ({ children }) => {
-  //children comes from React
+  // console.log(children);
   return (
+    // children comes from React
     <>
       <Global
         styles={css`
@@ -57,9 +57,17 @@ const Layout = ({ children }) => {
             }
           }
         `}
+      />
+      <header></header>
+      <main
+        css={css`
+          margin: 2rem auto 4rem;
+          max-width: 90vw;
+          width: 550px;
+        `}
       >
-        test from layout.js
-      </Global>
+        {children}
+      </main>
     </>
   );
 };
