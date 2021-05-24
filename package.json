@@ -16,10 +16,15 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "gatsby": "^2.32.13",
     "gatsby-plugin-emotion": "^6.5.0",
+    "gatsby-plugin-mdx": "^2.5.1",
+    "gatsby-plugin-react-helmet": "^4.5.0",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",

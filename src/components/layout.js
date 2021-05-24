@@ -1,10 +1,16 @@
 import React from 'react';
 import { Global, css } from '@emotion/react';
+import Helmet from 'react-helmet';
+
+import Header from './header';
+import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Layout = ({ children }) => {
-  // console.log(children);
+  // console.log(children);   // children comes from React
+
+  const { title, description } = useSiteMetadata();
+
   return (
-    // children comes from React
     <>
       <Global
         styles={css`
@@ -58,7 +64,12 @@ const Layout = ({ children }) => {
           }
         `}
       />
-      <header></header>
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
+      <Header></Header>
       <main
         css={css`
           margin: 2rem auto 4rem;
