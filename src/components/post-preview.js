@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/react';
 import { Link } from 'gatsby';
 import ReadLink from './read-link';
+import Image from 'gatsby-image';
 
 const PostPreview = ({ post }) => (
   <article
@@ -15,6 +16,16 @@ const PostPreview = ({ post }) => (
       }
     `}
   >
+    <Link
+      to={post.slug}
+      css={css` margin: 1rem 1rem 0 0; width: 100%;`}
+    >
+      <Image
+        // fluid={???}
+        css={css` * { margin-top: 0;}`}
+        alt={post.title}
+      />
+    </Link>
     <h3>
       <Link to={post.slug}>{post.title}</Link>
     </h3>
